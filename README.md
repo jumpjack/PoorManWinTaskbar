@@ -27,21 +27,25 @@ I found a workaround: start an app (without installing it) which creates a brand
 
 # Solution (for developers...)
 
-My solution is a python script, ran into a virtual environment created into the "secret" foldr MyApps, where you can copy and run any executable, even as a normal user. It's located in c:\users\USERNAME\MyApps folder .
+My solution is a python script, ran into a virtual environment created into the "secret" foldr MyApps, where you can copy and run any executable, even as a normal user. It's located in **c:\users\USERNAME\MyApps** folder .
 
-Unfortunately I am very bad as python programmer (actually I am NOT a python programmer at all: I completely used AI to write this app!), so my app is bad, slow, buggish, its source code is ugly and redundant... but it works, and that's all I need. I** put it here hoping that some REAL python developer can grab it and make it a "real" app**. The biggest issue as of now is that Windows keeps closing it every 5 minutes, and I have no idea why; I am sure any real python deveoper knows why and how to fix it.
+Unfortunately I am very bad as python programmer (actually I am NOT a python programmer at all: I completely used AI to write this app!), so my app is bad, slow, buggish, its source code is ugly and redundant... but it works, and that's all I need. I **put it here hoping that some REAL python developer can grab it and make it a "real" app**. 
+
+The biggest issue as of now is that **Windows keeps closing it every 5 minutes,** and I have no idea why; I am sure any real python deveoper knows why and how to fix it.
 
 # Installation
 
-- Download python to MyApps folder and install it
-- Create a virtual python environment in the folder:
+- Download **python 3.10** to MyApps folder and install it
+- open a DOS prompt
+- go inside  **c:\users\USERNAME\MyApps**:
+- create a virtual python environment in **c:\users\USERNAME\MyApps**:
 
-   `C:> python -m venv myenv`
+   `C:\users\USERNAME\MyApps> python -m venv myenv`
 
 "myenv" is the name of the folder which will be creted and which will become your virtual environment
 
-- copy the script in this folder
-- open a DOS prompt, go into the folder and launch the virtual environment:
+- copy the appbar script in **c:\users\USERNAME\MyApps** folder
+- launch the virtual environment:
 
    `call myenv\Scripts\activate.bat`
 
@@ -84,7 +88,7 @@ Right panel of the bar will just show currently opened app (and some other hidde
 - Click on an app button to switch to it
 - **Drag a file over an app to open a file in that app!** No hassles! No warnings! Just drag&open!
 
-Left panel is the quicklaunch bar: d
+Left panel is the quicklaunch bar:
 
 - drag here any app or folder to get it permanently stored there
 - click an app to launch it
