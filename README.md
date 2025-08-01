@@ -58,5 +58,36 @@ py mtraskbar.py
 
 You can start the taskbar just by opening the batch file.
 
+# Usage
+
+Right panel of the bar will just show currently opened app (and some other hidden app which I don't know how to get rid of....):
+
+- Click on an app button to switch to it
+- **Drag a file over an app to open a file in that app!** No hassles! No warnings! Just drag&open!
+
+Left panel is the quicklaunch bar: d
+
+- drag here any app or folder to get it permanently stored there
+- click an app to launch it
+- right click an app to remove it
+
+**The list and position of apps in quicklaunch can be easily edited by user: no secret paths, no hidden folders, just edit the quicklaunch_config.json file!**
+
+You can resize the appbar as you prefer: its size and position will be stored in window_position.json file and restored at startup.
+
+**You can move the appbar to any screen!** Just drag it there, or click Position menu and select your screen.
+
+# Bugs
+
+Many:
+
+- not all menu items are active/working , everything is under test...
+- Windows keep closing the appbar time by time, but starting it again bu opening go.bat file is anyway much faster than searching something in the useless builtin taskbar
+- Some apps with no visible windows appar anyway as button of available apps (?!?)
 
 
+# Limits
+
+- You need to install python and some dependencies
+- **Currently** you can't drag around the buttons in the bar
+- The quicklaunch bar behaves weirdly with mouusewheel...
