@@ -47,7 +47,7 @@ Unfortunately I am very bad as python programmer (actually I am NOT a python pro
 
 - your new taskbar is ready: just type
 
-  `py mtraskbar.py`
+  `py mytaskbar.py`
 
 You can also save in the folder a go.bat script containing these 2 lines:
 
@@ -57,6 +57,25 @@ py mtraskbar.py
 ```
 
 You can start the taskbar just by opening the batch file.
+
+## Dependencies
+
+I am not a python expert, AI did all the job, so I am not very sure about mandatory dependencies, but my script works after installing:
+
+- pywin32
+- pillow
+- tkinterdnd2
+- shiboken6
+- PySide6_Essentials
+- PySide6_Addons
+
+I think only first three or four ones are mandatory, probably the other ones were needed with a previous version of the script written by another AI.... Sorry, no idea.
+
+Installing these dependencies wit **pip install** could **appear** impossible in a protected office-PC whith limited access network; the workaround is downloading .whl (wheel) file for each dependency and install it offline with:
+
+`pip install --no-index wheelname.whl`
+
+**WARNING:** Be sure to choose the .whl file compatible with your python version: I used python 3.10 in a 64 bit mahcine based on AMD CPU, so I downloaded pywin32-**310**-c**p310**-c**p310**-win_**amd64**.whl
 
 # Usage
 
